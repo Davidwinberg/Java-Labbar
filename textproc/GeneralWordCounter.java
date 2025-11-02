@@ -47,10 +47,12 @@ public class GeneralWordCounter implements TextProcessor{
           //  if(words.get(key) >= 200){
             //    System.out.println(key + ": " + words.get(key));
         }   
-        
-        
+    public List <Map.Entry<String, Integer>> getWordList() {
+        return new ArrayList<>(words.entrySet()); 
+	}
     }
 
 
 	
+
  
